@@ -119,14 +119,14 @@
       line-height: 1;
     }
   
-    @media (min-width: 600px) {
+    @media (min-width: 990px) {
     .js-webgl-globe {
-      top: -60px;
+      top: -150px;
       z-index: -1
     }
     .home-globe-container-size {
-      width: 900px;
       height: 900px;
+      width: auto;
       z-index: -1;
     }
     .logo-anstromer {
@@ -143,9 +143,8 @@
     }
 
     }
-    @media (max-width: 600px) {
+    @media (max-width: 990px) {
       .js-webgl-globe {
-      top: -60px;
       z-index: -1;
       clear:both;display:block;margin:auto
       }
@@ -174,9 +173,7 @@
     .home-globe:after {
     position: absolute;
     top: 0;
-    right: -2rem;
     bottom: 0;
-    left: -2rem;
     display: block;
     pointer-events: none;
     content: "";
@@ -294,9 +291,10 @@
 
         </div>
     </nav>
-      <div>
-        <div class="row position-absolute top-0 right-0 left-0 overflow-hidden">
-          <div class="col-lg-6 top-0 mini-height" style="display: flex; flex-direction: column;justify-content: center;">
+    <div class="">
+      <div class="overflow-hidden">
+        <div class="row">
+          <div class="col-lg-6 top-0" style="display: flex; flex-direction: column;justify-content: center;">
             <h1 class="text-white text-center h1-font">Where the world builds software</h1>
             <h3 class="font-12 text-gray text-center">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</h3>
             <form>
@@ -336,12 +334,12 @@
             <!-- <canvas width="2352" height="900" class="webgl-canvas js-globe-canvas" style="width: 2352px; height: 900px;"></canvas></div> -->
             <img src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" class="position-absolute logo-anstromer  events-none z-2" alt="Mona looking at GitHub activity across the globe">
   
-          </div>
+            </div>
+            <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
         </div>
-        <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
         </div>
       </div>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
