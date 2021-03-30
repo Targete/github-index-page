@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>github.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style type="text/css">
+    .z-1 {
+    z-index: 1;
+    pointer-events: none;
+    }
+    .home-hero-glow {
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%,-50%);
+    }
+
+    .position-absolute {
+    position: absolute!important;
+    }
+    .left-0 {
+    left: 0!important;
+}
+.bottom-0 {
+    bottom: 0!important;
+}
+.right-0 {
+    right: 0!important;
+}
+.top-0 {
+    top: 0!important;
+}
+.mini-height {
+  min-height:800px;
+}
+    .bg-top {
+        /* background-image: url(https://github.githubassets.com/images/modules/site/home/hero-glow.svg); */
+        background-color: #040d21;
+    }
+    .btn-custom {
+        color: #fff;
+        border-color: #fff;
+        background-color: rgba(255, 255, 255, 0)
+    }
+    .btn-custom:hover,
+    .btn-custom:focus,
+    .btn-custom:active,
+    .btn-custom.active {
+        background-color: #f2f2f2;
+        border-color: #e6e6e6;
+    }
+    .btn-custom.disabled:hover,
+    .btn-custom.disabled:focus,
+    .btn-custom.disabled:active,
+    .btn-custom.disabled.active,
+    .btn-custom[disabled]:hover,
+    .btn-custom[disabled]:focus,
+    .btn-custom[disabled]:active,
+    .btn-custom[disabled].active,
+    fieldset[disabled] .btn-custom:hover,
+    fieldset[disabled] .btn-custom:focus,
+    fieldset[disabled] .btn-custom:active,
+    fieldset[disabled] .btn-custom.active {
+        background-color: #fff;
+        border-color: #fff;
+    }
+    .white-text {
+        color: white;
+    }
+    /* .navbar {color: #fff;} */
+    .navbar-dark .navbar-nav .nav-link  {
+    color: #ffffff;
+    }
+    .color-text-white {
+      color: white;
+    }
+    .octicon {
+    /* display: inline-block; */
+    /* vertical-align: text-top; */
+    fill: white;
+    }
+    /* input {
+      background-color: white;
+      color: white;
+    } */
+    .margin30 {
+      margin-top: 30px;
+    }
+    .padding15 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .font-14{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .text-gray{
+      color: #8193b2;
+    }
+    .right-bottom-15 {
+      margin-right: 15px;
+      margin-bottom: 15px;
+      max-width: 300px;
+    }
+    .noboder {
+      border-width: 0;
+    }
+    .marginLeft15 {
+      margin-left: 15px;
+    }
+    .margin-top-15 {
+      margin-top: 15px;
+    }
+    .h1-font {
+      font-size: 4rem;
+      font-weight: 800!important;
+      line-height: 1;
+    }
+  
+    @media (min-width: 600px) {
+    .js-webgl-globe {
+      top: -60px;
+      z-index: -1
+    }
+    .home-globe-container-size {
+      width: 900px;
+      height: 900px;
+      z-index: -1;
+    }
+    .logo-anstromer {
+    top: 28%;
+    left: 35%;
+    width:480px;
+    height:484px;
+    }
+    .home-globe-container-video {
+    left: 0;
+    width: 900px;
+    height: 900px;
+    margin-left: -150px;
+    }
+
+    }
+    @media (max-width: 600px) {
+      .js-webgl-globe {
+      top: -60px;
+      z-index: -1;
+      clear:both;display:block;margin:auto
+      }
+      .home-globe-container-size {
+      width: 900px;
+      height: 900px;
+      left: 50%;
+      top: -150px;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    .logo-anstromer {
+      width:240px;
+      height:242px;
+      bottom: 1350px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .home-globe-container-video{
+      width: 900px;
+      height: 900px;
+    }
+
+    }
+
+    .home-globe:after {
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    bottom: 0;
+    left: -2rem;
+    display: block;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(180deg,rgba(4,13,33,0) 0,#040d21 60%);opacity: .3;
+    }
+    .mx-auto {
+    margin-right: auto!important;
+    margin-left: auto!important;
+    }
+    .body-fluid {
+    font-size: 100%;
+    }
+    .search-input {
+      background: none;
+      margin-right: 10px;
+    }
+    .z-2 {
+    z-index: 2;
+}
+.events-none {
+    pointer-events: none;
+}
+@media (min-width: 1012px) {
+.right-lg-n12 {
+    right: -128px!important;
+}
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+@media (min-width: 1012px){
+.col-lg-5 {
+    width: 41.66667%;
+}
+}
+    </style>
+
+</head>
+<body class="bg-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand" href="#">
+            <svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>            
+        </a>
+        <!-- <a class="navbar-brand navbar-right" href="#">
+          <button type="button" class="btn btn-custom">Sign up</button>
+        </a> -->
+      <div class="navbar-toggler noboder" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn btn-custom marginLeft15">
+          Sign up
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn btn-custom  navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Sign up
+        </button> -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Why GitHub?
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enterprise</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Explore
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Market</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pricing
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+          </ul>
+          <form class="d-flex right-bottom-15">
+
+            <input class="form-control search-input" type="search" placeholder="Search GitHub" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>  
+          <button class="btn btn-custom right-bottom-15" type="button">
+            Sign up
+          </button>
+
+        </div>
+    </nav>
+      <div>
+        <div class="row position-absolute top-0 right-0 left-0 overflow-hidden">
+          <div class="col-lg-6 top-0 mini-height" style="display: flex; flex-direction: column;justify-content: center;">
+            <h1 class="text-white text-center h1-font">Where the world builds software</h1>
+            <h3 class="font-12 text-gray text-center">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</h3>
+            <form>
+              <div class="form-group row margin30">
+                <div class="col-md-7 col-sm-12">
+                  <div class="input-group input-group-md">
+                    <input type="text" class="form-control margin-top-15" id="Email" value="Email" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  
+                  <!-- <input type="text" readonly class="form-control-plaintext" id="Email" value="Email"> -->
+                </div>
+                <div class="col-md-5 col-sm-12">
+                  <button type="button" class="btn btn-success font-14 btn-lg margin-top-15">Sign up for GitHub</button>
+                </div>
+            
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 home-globe-container-size">
+            <div class="home-globe position-relative js-webgl-globe">
+              <video autoplay="autoplay" loop = "loop" muted playsinline="true" preload="auto" class="home-globe-container-video">
+                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-900.hevc.mp4">
+                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-900.h264.mp4">
+              </video>
+              <!-- <video autoplay="autoplay" width="916" height="918" loop = "loop" muted playsinline="true" preload="auto"  class="home-globe-container-video js-globe-fallback-video-small">
+                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.hevc.mp4">
+                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.h264.mp4">
+              </video> -->
+
+              <video loop="" muted="" playsinline="" preload="none" class="home-globe-container-video js-globe-fallback-video-small">
+                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.hevc.mp4">
+                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.h264.mp4">
+              </video>
+              <img srcset="https://github.githubassets.com/images/modules/site/home/globe-700.jpg 700w,
+                        https://github.githubassets.com/images/modules/site/home/globe.jpg 1400w" sizes="(max-width: 700px) 70vw, 700px" src="https://github.githubassets.com/images/modules/site/home/globe.jpg" alt="Planet earth with visualization of GitHub activity crossing the globe" class="width-full js-globe-fallback-image" loading="lazy" hidden="">
+
+            <!-- <canvas width="2352" height="900" class="webgl-canvas js-globe-canvas" style="width: 2352px; height: 900px;"></canvas></div> -->
+            <img src="https://github.githubassets.com/images/modules/site/home/astro-mona.svg" class="position-absolute logo-anstromer  events-none z-2" alt="Mona looking at GitHub activity across the globe">
+  
+          </div>
+        </div>
+        <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity=""
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
